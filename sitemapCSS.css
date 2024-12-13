@@ -1,0 +1,23 @@
+/* sitemapCSS.css */
+.sitemap {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.sitemap h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sitemap ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sitemap ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #666;
+}

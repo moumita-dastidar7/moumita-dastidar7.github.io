@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Cook</title>
+    <link rel="stylesheet" href="cssFile.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+    <div class="container">
+        <h1>Easy Cook</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Easy Cook</a></li>
+                <li><a href="#recipes">Quick Recipes</a></li>
+                <li><a href="#tips">Cooking Tips</a></li>
+                <li><a href="#videos">Video Tutorials</a></li>
+                <li><a href="community_feedback.html">Community Feedback</a></li>
+                <li><a href="#about">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#subscribe">Newsletter Sign-Up</a></li>
+                <li><a href="community_feedback.html">FAQ</a></li>
+
+            </ul>
+        </nav>
+    </div>
+	</header>
+
+		<!-- Home Section -->
+	<section id="home" class="hero">
+		<div class="hero-text">
+			<h1>Welcome to Easy Cook</h1>
+			<p>Discover the joy of cooking with simple, delicious recipes for everyone.</p>
+			<a href="#recipes" class="btn">Explore Recipes</a>
+		</div>
+	</section>
+
+
+
+    <!-- About Section -->
+	<section id="about" class="about">
+		<h2>About Easy Cook</h2>
+		<p>
+			Easy Cook is your companion in the kitchen. Our mission is to simplify cooking for young adults, particularly students and professionals, by providing easy-to-follow recipes, practical cooking tips, and tutorials. Whether you’re a complete beginner or just looking for quick meal ideas, Easy Cook is here to help you enjoy the process of creating delicious meals.
+		</p>
+		<p>
+			From one-pan dinners to 10-minute snacks, Easy Cook is designed for people with limited time, budget, or experience. Join our community and start your journey toward becoming a confident home cook.
+		</p>
+	</section>
+
+	<!-- Opportunity and Call to Action Section -->
+	<section id="focus" class="focus">
+		<h2>Opportunity or Issue Addressed</h2>
+		<p>
+			Easy Cook addresses the common issue of young adults feeling overwhelmed by cooking or lacking the skills to prepare meals at home. Many students and professionals find it difficult to balance busy schedules with cooking at home, leading to reliance on fast food or ready meals. Easy Cook makes it easy to cook simple, delicious meals with minimal time and effort.
+		</p>
+
+		<h3>Call to Action</h3>
+		<p>
+			We encourage you to explore our easy-to-follow recipes, try them out, and share your results on social media. Join the Easy Cook community and discover new meal ideas that fit your lifestyle. Don’t forget to subscribe to our newsletter for regular cooking tips, new recipes, and updates directly to your inbox.
+		</p>
+		<!--'cta-btn' class -->
+		<div class="cta-btn"><a href="#subscribe">Subscribe Now</a></div>
+	</section>
+
+    <!-- Featured Recipes -->
+    <section id="recipes" class="recipes">
+        <h2>Featured Recipes</h2>
+        <div class="recipe-list">
+            <!-- Recipe 1 -->
+            <div class="recipe">
+                <img src="easy_pasta.jpg" alt="Easy Pasta">
+                <h3>Easy Pasta</h3>
+                <p>A quick 15-minute pasta recipe perfect for beginners. Toss with olive oil, garlic, and parmesan for a classic taste.</p>
+                <button class="toggle-btn" onclick="toggleRecipeDetails(1)">Making Process</button>
+                <div id="recipe-details-1" class="recipe-details">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>200g pasta</li>
+                        <li>2 tbsp olive oil</li>
+                        <li>2 garlic cloves, minced</li>
+                        <li>50g grated parmesan</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
+                    <h4>Instructions:</h4>
+                    <ol>
+                        <li>Boil the pasta in salted water until al dente. Drain and set aside.</li>
+                        <li>In a pan, heat olive oil and sauté garlic until fragrant.</li>
+                        <li>Add the cooked pasta and toss well.</li>
+                        <li>Mix in grated parmesan, salt, and pepper.</li>
+                        <li>Serve hot and enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Recipe 2 -->
+            <div class="recipe">
+                <img src="one_pen_chicken.jpg" alt="One-Pan Chicken">
+                <h3>One-Pan Chicken</h3>
+                <p>Minimal effort, maximum flavor. Cook chicken, veggies, and spices together in one pan for a wholesome meal.</p>
+                <button class="toggle-btn" onclick="toggleRecipeDetails(2)">Making Process</button>
+                <div id="recipe-details-2" class="recipe-details">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>2 chicken breasts</li>
+                        <li>1 cup mixed vegetables</li>
+                        <li>1 tsp paprika</li>
+                        <li>1 tsp garlic powder</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
+                    <h4>Instructions:</h4>
+                    <ol>
+                        <li>Preheat the oven to 200°C (400°F).</li>
+                        <li>Place chicken and vegetables on a baking tray.</li>
+                        <li>Season with paprika, garlic powder, salt, and pepper.</li>
+                        <li>Bake for 25-30 minutes, or until the chicken is cooked through.</li>
+                        <li>Serve and enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Recipe 3 -->
+            <div class="recipe">
+                <img src="veggie_stir_fry.jpg" alt="Veggie Stir-Fry">
+                <h3>Veggie Stir-Fry</h3>
+                <p>A colorful mix of vegetables sautéed in a savory sauce. Serve with rice or noodles for a complete meal.</p>
+                <button class="toggle-btn" onclick="toggleRecipeDetails(3)">Making Process</button>
+                <div id="recipe-details-3" class="recipe-details">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>1 bell pepper, sliced</li>
+                        <li>1 carrot, julienned</li>
+                        <li>1 zucchini, sliced</li>
+                        <li>2 tbsp soy sauce</li>
+                        <li>1 tsp sesame oil</li>
+                        <li>Rice or noodles to serve</li>
+                    </ul>
+                    <h4>Instructions:</h4>
+                    <ol>
+                        <li>Heat sesame oil in a pan, then add vegetables and stir-fry for 5-7 minutes.</li>
+                        <li>Add soy sauce and stir well.</li>
+                        <li>Serve over rice or noodles and enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Recipe 4 -->
+            <div class="recipe">
+                <img src="banana_pancakes.jpg" alt="Banana Pancakes">
+                <h3>Banana Pancakes</h3>
+                <p>Fluffy pancakes made with ripe bananas and a hint of cinnamon. Perfect for breakfast or brunch.</p>
+                <button class="toggle-btn" onclick="toggleRecipeDetails(4)">Making Process</button>
+                <div id="recipe-details-4" class="recipe-details">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>2 ripe bananas</li>
+                        <li>1 egg</li>
+                        <li>1 cup flour</li>
+                        <li>1 tsp cinnamon</li>
+                        <li>1/2 cup milk</li>
+                    </ul>
+                    <h4>Instructions:</h4>
+                    <ol>
+                        <li>Mash the bananas and mix with egg, flour, cinnamon, and milk.</li>
+                        <li>Heat a pan and pour batter to form small pancakes.</li>
+                        <li>Cook on both sides until golden brown.</li>
+                        <li>Serve with maple syrup and enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Recipe 5 -->
+            <div class="recipe">
+                <img src="avocado_toast.jpg" alt="Avocado Toast">
+                <h3>Avocado Toast</h3>
+                <p>Creamy avocado spread over toasted bread, topped with chili flakes, and a drizzle of olive oil.</p>
+                <button class="toggle-btn" onclick="toggleRecipeDetails(5)">Making Process</button>
+                <div id="recipe-details-5" class="recipe-details">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>1 ripe avocado</li>
+                        <li>2 slices bread</li>
+                        <li>Chili flakes</li>
+                        <li>Olive oil</li>
+                    </ul>
+                    <h4>Instructions:</h4>
+                    <ol>
+                        <li>Toast the bread slices until golden brown.</li>
+                        <li>Mash the avocado and spread it over the toast.</li>
+                        <li>Sprinkle with chili flakes and drizzle with olive oil.</li>
+                        <li>Serve and enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Recipe 6 -->
+            <div class="recipe">
+                <img src="chili_con_carne.jpg" alt="Chili Con Carne">
+                <h3>Chili Con Carne</h3>
+                <p>A hearty and spicy dish made with ground beef, beans, tomatoes, and spices. Serve with rice or tortilla chips.</p>
+                <button class="toggle-btn" onclick="toggleRecipeDetails(6)">Making Process</button>
+                <div id="recipe-details-6" class="recipe-details">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>500g ground beef</li>
+                        <li>1 can kidney beans</li>
+                        <li>1 can diced tomatoes</li>
+                        <li>1 tsp chili powder</li>
+                        <li>1 tsp cumin</li>
+                    </ul>
+                    <h4>Instructions:</h4>
+                    <ol>
+                        <li>Brown the ground beef in a pan, then add beans and tomatoes.</li>
+                        <li>Season with chili powder, cumin, salt, and pepper.</li>
+                        <li>Simmer for 20-30 minutes.</li>
+                        <li>Serve with rice or tortilla chips and enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Recipe 7 -->
+            <div class="recipe">
+                <img src="smoothie_bowl.jpg" alt="Smoothie Bowl">
+                <h3>Smoothie Bowl</h3>
+                <p>Blend fruits and yogurt into a thick smoothie, topped with granola, seeds, and fresh fruit.</p>
+                <button class="toggle-btn" onclick="toggleRecipeDetails(7)">Making Process</button>
+                <div id="recipe-details-7" class="recipe-details">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>1 banana</li>
+                        <li>1 cup mixed berries</li>
+                        <li>1/2 cup yogurt</li>
+                        <li>Granola</li>
+                        <li>Chia seeds</li>
+                    </ul>
+                    <h4>Instructions:</h4>
+                    <ol>
+                        <li>Blend the banana, mixed berries, and yogurt until smooth.</li>
+                        <li>Pour into a bowl and top with granola and chia seeds.</li>
+                        <li>Serve and enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Recipe 8 -->
+			<div class="recipe">
+				<img src="grilled_cheese.jpg" alt="Grilled Cheese">
+				<h3>Grilled Cheese Sandwich</h3>
+				<p>Golden and crispy on the outside, gooey and cheesy on the inside. A timeless comfort food.</p>
+				<button class="toggle-btn" onclick="toggleRecipeDetails(8)">Making Process</button>
+				<div id="recipe-details-8" class="recipe-details">
+					<h4>Ingredients:</h4>
+					<ul>
+						<li>2 slices of bread</li>
+						<li>2 slices of cheese</li>
+						<li>1 tbsp butter</li>
+					</ul>
+					<h4>Instructions:</h4>
+					<ol>
+						<li>Heat a pan over medium heat and melt butter on one side of each bread slice.</li>
+						<li>Place a slice of cheese between the two slices of bread with the buttered sides facing out.</li>
+						<li>Grill the sandwich until golden and crispy on both sides, about 3-4 minutes per side.</li>
+						<li>Serve hot and enjoy!</li>
+					</ol>
+				</div>
+			</div>
+
+			<!-- Recipe 9 -->
+			<div class="recipe">
+				<img src="shakshuka.jpg" alt="Shakshuka">
+				<h3>Shakshuka</h3>
+				<p>Eggs poached in a spiced tomato and bell pepper sauce. Best served with crusty bread.</p>
+				<button class="toggle-btn" onclick="toggleRecipeDetails(9)">Making Process</button>
+				<div id="recipe-details-9" class="recipe-details">
+					<h4>Ingredients:</h4>
+					<ul>
+						<li>2 eggs</li>
+						<li>1 bell pepper, chopped</li>
+						<li>1 onion, chopped</li>
+						<li>1 can diced tomatoes</li>
+						<li>1 tsp cumin</li>
+						<li>1 tsp paprika</li>
+						<li>Salt and pepper to taste</li>
+					</ul>
+					<h4>Instructions:</h4>
+					<ol>
+						<li>In a pan, sauté the onion and bell pepper in olive oil until soft.</li>
+						<li>Add tomatoes, cumin, paprika, salt, and pepper. Simmer for 10 minutes until the sauce thickens.</li>
+						<li>Create two wells in the sauce and crack an egg into each one.</li>
+						<li>Cover and cook for 5-7 minutes, or until the eggs are poached to your liking.</li>
+						<li>Serve with crusty bread and enjoy!</li>
+					</ol>
+				</div>
+			</div>
+
+			<!-- Recipe 10 -->
+			<div class="recipe">
+				<img src="fried_rice.jpg" alt="Fried Rice">
+				<h3>Quick Fried Rice</h3>
+				<p>A simple stir-fry with rice, veggies, and your choice of protein. A great way to use up leftovers.</p>
+				<button class="toggle-btn" onclick="toggleRecipeDetails(10)">Making Process</button>
+				<div id="recipe-details-10" class="recipe-details">
+					<h4>Ingredients:</h4>
+					<ul>
+						<li>2 cups cooked rice</li>
+						<li>1 cup mixed veggies (peas, carrots, corn)</li>
+						<li>1/2 cup cooked chicken (optional)</li>
+						<li>2 tbsp soy sauce</li>
+						<li>1 tbsp sesame oil</li>
+						<li>1 egg</li>
+					</ul>
+					<h4>Instructions:</h4>
+					<ol>
+						<li>Heat sesame oil in a pan, then add veggies and cook for 3-4 minutes.</li>
+						<li>Push the veggies to one side and scramble the egg on the other side of the pan.</li>
+						<li>Add the rice, soy sauce, and cooked chicken (if using), and stir-fry for 5-7 minutes.</li>
+						<li>Serve hot and enjoy!</li>
+					</ol>
+				</div>
+			</div>
+        </div>
+    </section>
+	
+		<!-- Video Tutorials Section -->
+<section id="videos" class="videos">
+    <h2>Video Tutorials</h2>
+    <p>Learn to cook with step-by-step video guides. Watch our tutorials to improve your cooking skills and create delicious meals in no time!</p>
+
+    <div class="video-list">
+        <!-- Video 1 -->
+        <div class="video">
+            <h3>How to Make Quick Pasta</h3>
+            <iframe width="560" height="315" src="easy_pasta.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video1"></iframe>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video">
+            <h3>One-Pan Chicken Dinner</h3>
+            <iframe width="560" height="315" src="One_Pan_Chicken.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video2"></iframe>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video">
+            <h3>Veggie Stir-Fry Recipe</h3>
+            <iframe width="560" height="315" src="Veggie_Stir_Fry.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video3"></iframe>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video">
+            <h3>Banana Pancakes</h3>
+            <iframe width="560" height="315" src="banana_pancakes.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video4"></iframe>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- using javaScript for recipe -->
+    <script>
+        function toggleRecipeDetails(recipeId) {
+            var recipeDetails = document.getElementById('recipe-details-' + recipeId);
+            var allRecipeDetails = document.querySelectorAll('.recipe-details');
+
+            allRecipeDetails.forEach(function(detail) {
+                if (detail !== recipeDetails) {
+                    detail.style.display = 'none';
+                }
+            });
+
+            if (recipeDetails.style.display === 'block') {
+                recipeDetails.style.display = 'none';
+            } else {
+                recipeDetails.style.display = 'block';
+            }
+        }
+    </script>
+
+    <!-- Cooking Tips -->
+    <section id="tips" class="tips">
+        <h2>Cooking Tips</h2>
+        <div class="tips-container">
+            <div class="tip">
+                <h3>Tip 1</h3>
+                <p>Prep all your ingredients before starting to cook – it saves time and reduces stress.</p>
+            </div>
+            <div class="tip">
+                <h3>Tip 2</h3>
+                <p>Use fresh herbs and spices to elevate the flavor of any dish.</p>
+            </div>
+            <div class="tip">
+                <h3>Tip 3</h3>
+                <p>Invest in a good-quality knife – it makes prep work much easier.</p>
+            </div>
+            <div class="tip">
+                <h3>Tip 4</h3>
+                <p>Clean as you go to keep your workspace organized and tidy.</p>
+            </div>
+            <div class="tip">
+                <h3>Tip 5</h3>
+                <p>Taste your food as you cook to adjust seasoning and ensure it’s perfect.</p>
+            </div>
+            <div class="tip">
+                <h3>Tip 6</h3>
+                <p>Keep your pantry stocked with basics like olive oil, salt, and pepper.</p>
+            </div>
+			<div class="tip">
+            <h3>Tip 7</h3>
+            <p>Share your cooking experience on social media! We aim to have at least 20% of our visitors try a recipe and share their experience, helping to create a community of home cooks who inspire one another.</p>
+        </div>
+        </div>
+    </section>
+		
+	
+	<!-- Subscribe Section -->
+<section id="subscribe" class="subscribe">
+    <h3>Subscribe to Our Newsletter</h3>
+    <p>Get regular cooking tips, recipe updates, and more!</p>
+    <form action="/subscribe" method="post">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+	
+		<!-- External Resources Section -->
+	<section id="resources" class="resources">
+		<h2>Cooking Supplies and Further Reading</h2>
+		<p>Explore the best cooking supplies and resources to enhance your culinary skills:</p>
+		<ul>
+			<li><a href="https://www.amazon.com/cooking-tools" target="_blank">Cookware and Utensils - Amazon</a></li>
+			<li><a href="https://www.foodnetwork.com" target="_blank">Food Network - Recipes and Tips</a></li>
+			<li><a href="https://www.cooking.com" target="_blank">Cooking Supplies - Cooking.com</a></li>
+		</ul>
+	</section>
+</section>
+
+
+	<!-- Contact Section-->
+<footer id="contact">
+    <div class="container">
+        <p>© 2024 Easy Cook. All rights reserved.</p>
+        <p>Follow us on:</p>
+        <ul class="social-media">
+            <li><a href="#home" target="_blank"><img src="facebook.png" alt="Facebook" class="footer-icon"> Facebook</a></li>
+            <li><a href="#home" target="_blank"><img src="instagram.png" alt="Instragram" class="footer-icon"> Instagram</a></li>
+        </ul>
+        <p>Contact us:</p>
+        <ul class="contact-info">
+            <li><a href="#home"><img src="email.png" alt="Email" class="footer-icon"> Email</a></li>
+            <li><a href="#home"><img src="phone.png" alt="Phone Number" class="footer-icon"> 01234 567-890</a></li> <!-- Dummy phone number -->
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Feedback</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="feedbackStyle.css">
+</head>
+<body>
+
+    <section id="community-feedback" class="community-feedback">
+        <h2>Community Feedback</h2>
+        <p>We would love to hear your thoughts! Please leave your feedback below.</p>
+
+        <!-- Feedback Form -->
+        <form action="#" method="POST" class="feedback-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Feedback:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Enter your feedback here"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+
+        <!-- Feedback Display Section -->
+        <div class="feedback-display">
+            <h3>Recent Feedback</h3>
+            <div class="feedback-item">
+                <p><strong>John Doe:</strong> This website is amazing! The recipes are easy to follow, and I learned a lot. Keep up the great work!</p>
+            </div>
+            <div class="feedback-item">
+                <p><strong>Jane Smith:</strong> I loved the video tutorials! They made cooking so much easier. Can't wait to try more recipes!</p>
+            </div>
+        </div>
+		
+        <!-- Back Button -->
+        <a href="htmlFile.html" class="back_btn">Go Back To Home Page</a>
+    </section>
+
+</body>
+</html>

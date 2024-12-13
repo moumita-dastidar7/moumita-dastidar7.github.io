@@ -1,0 +1,505 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header and Navigation */
+header {
+    background: #f04e30;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+nav ul li {
+    margin-right: 20px;
+    margin-bottom: 10px; 
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:focus {
+    outline: 2px solid #fff;
+}
+
+
+/* Home Section */
+.hero {
+    background: 
+        linear-gradient(to bottom right, rgba(200, 126, 95, 0.7), rgba(200, 180, 123, 0.7)),
+        url('welcome.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: #ff7e5f;
+    background: #fff;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #ff7e5f;
+    color: #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Recipes Section */
+.recipe-details {
+    display: none;
+    margin-top: 10px;
+}
+.toggle-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.toggle-btn:focus {
+    outline: none;
+}
+
+.recipes {
+    padding: 20px 0;
+    background: #f9f9f9;
+}
+
+.recipes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipe-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recipe {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+}
+
+.recipe h3 {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+/* Cooking Tips */
+.tips {
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.tips h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.tips-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tip {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.tip h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.tip p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Contact */
+footer#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+footer#contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer#contact p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+footer#contact p:last-of-type {
+    margin-bottom: 20px;
+}
+
+footer#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer#contact ul li {
+    margin: 0;
+}
+
+footer#contact ul li a {
+    color: #f04e30;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer#contact ul li a:hover {
+    color: #fff;
+    transform: scale(1.1); 
+}
+
+footer#contact ul li a:focus {
+    outline: 2px solid #fff;
+}
+
+footer#contact .footer-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+footer#contact .social-media li a {
+    color: #f04e30;
+}
+
+footer#contact .social-media li a:hover {
+    color: #fff;
+}
+
+footer#contact .contact-info li a {
+    font-size: 1rem; 
+}
+
+footer#contact .contact-info li a:hover {
+    color: #f04e30;
+}
+
+
+.social-media, .contact-info {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-media li, .contact-info li {
+    margin: 0 15px;
+}
+
+.social-media i, .contact-info i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.contact-info li a {
+    font-size: 1rem;
+}
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f04e30;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Opportunity and Call to Action Section */
+.focus {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.focus h2 {
+    color: #333;
+}
+
+.focus p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.cta-btn a {
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cta-btn a:hover {
+    background-color: #45a049;
+}
+
+/* Video Section */
+.videos {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.videos h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.videos p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.video {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.video:hover {
+    transform: scale(1.05);
+}
+
+.video h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin: 20px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Subscribe Section */
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 40px;
+}
+
+.subscribe h3, .subscribe p {
+    margin-bottom: 10px;
+}
+
+.subscribe form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #45a049;
+}
+
+/* Resources Section */
+.resources {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+}
+
+.resources h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.resources p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resources ul li {
+    margin-bottom: 15px;
+}
+
+.resources ul li a {
+    font-size: 1.1rem;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.resources ul li a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.resources ul li a:focus {
+    outline: 2px solid #4CAF50;
+}
